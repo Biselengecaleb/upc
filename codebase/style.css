@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     background-color:rgb(236, 236, 236);
+     
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    color: black;
+    background-color: black;
+    border-radius: 10px;
+    position:relative;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 0;
+    margin: 0;
+    position: fixed;
+}
+.logo{
+    margin: 20px; 
+     display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 70px;
+    position:relative;
+    width: 100%;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px rgba(0, 0, 0, 0.1) solid;
+    transition: scale 0.2 ease;
+    backdrop-filter:blur(4px);
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    
+    
+}
+.navbar:hover{
+     
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap:30px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    height: 100vh;
+}
+.navbar ul li a:hover{
+    background-color:  rgb(134, 153, 24);
+    padding: 10px 10px;
+    border-radius: 20px;
+    scale: 1.05;
+    
+}
+.toggle{
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+
+}
+.connect{
+    text-decoration: none;
+    background-color: rgb(217, 255, 0) ;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-right: 20px;
+    transition: scale 0.2 ease;
+}
+.connect:hover{
+    background-color:  rgb(134, 153, 24);
+    scale: 1.05;
+}
+.toggle_menu{
+    position: fixed;
+    right: 2rem;
+    top: 67px;
+    width: 300px;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(55px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
+}
+.toggle_menu_open{
+    height: 270px;
+    z-index: 1000;
+
+}
+.toggle_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggle_menu .connect{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle_menu li a{
+     text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+.toggle_menu li a:hover{
+    background-color:  rgb(134, 153, 24);
+    padding: 10px 10px;
+    border-radius: 20px;
+    scale: 1.05;
+}
+
+
+
+.corps{
+    padding: 20px;
+    background-color:#f9f9f9;
+}
+.acceuil{
+    background-image: url('salon-unfocused-avec-une-image-sur-le-mur.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.txt_acceuil h1{
+    font-size:32px ;
+    margin-bottom: 20px;
+}
+.btn1{
+    background-color: rgb(217, 255, 0);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: scale 0.2 ease;
+}
+.btn1:hover{
+    background-color:  rgb(134, 153, 24);
+    scale: 1.05;
+}
+.img1{
+    height: 67px;
+    width: auto;
+}
+
+
+.txt2{
+    
+    height: auto;
+    width: auto;
+    background-color:#f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    
+    
+}
+.txt2 h2 {
+            font-size: 32px;
+            color: black;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .txt2 h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .txt2 p {
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .txt2 b {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: black;
+        }
+
+        .btn2 {
+            display: inline-block;
+            background-color: #004aad;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn2:hover {
+            background-color: #003080;
+        }
+
+
+.btn2{
+    background-color:  rgb(217, 255, 0);
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: rgb(21, 17, 17);
+    font-weight: bolder;
+    transition: scale 0.2 ease;
+    color: white;
+}
+.btn2:hover{
+    background-color:  rgb(134, 153, 24);
+    scale: 1.05;
+}
+
+.section2{
+    margin: 20px;
+     background-color:#fff;
+    border: #555;
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    
+}
+.à-louer{
+    gap: 10px;
+    display: flex;
+    background-color:white;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn3{
+     background-color:  rgb(217, 255, 0);
+    border-radius: 20px;
+    color: rgb(21, 17, 17);
+    font-weight: bolder;
+     transition: background-color 0.3s ease;
+    padding: 5px 10px;
+    color: white;
+    
+
+}
+.btn3:hover{
+      background-color:  rgb(134, 153, 24);
+    scale: 1.05;
+}
+
+
+
+.à-louer div{
+    background-color:white;
+    width: 20%;
+    height: auto;
+     border: #555;
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    padding: 5px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    flex-basis: 270px;
+}
+.à-louer div:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.à-louer div img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    
+    
+}
+
+
+
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-container h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form-container h1 span {
+  color: rgb(217, 255, 0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+button {
+  width: 150px;
+  padding: 12px;
+  background-color: rgb(217, 255, 0);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: center;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(134, 153, 24);
+}
+/* Formulaire connexion*/
+.form-connexion{
+     background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: gray ;
+    height: 60px;
+    width: 100%;
+}
+
+
+
+.gallery-contenair{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: red;
+
+}
+.gallery-item{
+    flex-basis: 32.7%;
+    margin-bottom: 6px;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.contact-section{
+  background-image: url('salon-unfocused-avec-une-image-sur-le-mur.jpg');
+   background-size: cover;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inscr{
+  text-decoration: underline;
+  color: blue;
+}
+/* Formulaire connexion*/
+.form-container{
+     background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-container h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form-container h1 span {
+  color: rgb(217, 255, 0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+button {
+  width: 150px;
+  padding: 12px;
+  background-color: rgb(217, 255, 0);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(134, 153, 24);
+}
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:1070px){
+    .navbar,.connect{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .toggle_menu{
+        display: block;
+    }
+
+}
+@media(max-width:1500px ){
+    .section2{
+        height: 100%;
+        width: auto;  
+    }
+
+}
+
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width:1070px){
+   .toggle_menu{
+    width: unset;
+    left: 2rem;
+   }
+}
+
+@media (max-width:1000px){
+    .pform{
+    width: 70%;
+ }
+}
+
+@media (max-width:1500px){
+    .à-louer div{
+        height: 325px;
+        width: auto;
+        background-color:white;
+     border: #555;
+    box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
+    flex-basis: 270px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.à-louer div:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    
+
+    }
+ 
+
+}
+
+
+
