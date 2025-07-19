@@ -21,27 +21,21 @@ function toggleModal(){
 }
 
 
-  const modalContainer = document.querySelector(".modal-container");
-const modalTriggers = document.querySelectorAll(".modal-trigger");
-modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
-function toggleModal(){
-   modalContainer.classList.toggle("active")
-}
 
 
+   // Ouvrir la modale avec le bon contenu
+document.querySelectorAll('.modal-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.getAttribute('data-content');
+    document.getElementById('modal-content').innerHTML = content;
+    document.getElementById('modal').style.display = 'block';
+  });
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Fermer la modale
+document.getElementById('close').addEventListener('click', () => {
+  document.getElementById('modal').style.display = 'none';
+});
 
 
 
