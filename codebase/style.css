@@ -70,7 +70,7 @@ a{
 }
 .navbar ul li a:hover{
     background-color:  rgb(134, 153, 24);
-    padding: 10px 10px;
+    padding: 5px 10px;
     border-radius: 20px;
     scale: 1.05;
     
@@ -86,7 +86,7 @@ a{
 .connect{
     text-decoration: none;
     background-color: rgb(217, 255, 0) ;
-    padding: 10px 10px;
+    padding: 5px 10px;
     color: white;
     font-weight: bolder;
     border-radius: 20px;
@@ -135,7 +135,7 @@ a{
 }
 .toggle_menu li a:hover{
     background-color:  rgb(134, 153, 24);
-    padding: 10px 10px;
+    padding: 5px 10px;
     border-radius: 20px;
     scale: 1.05;
 }
@@ -185,7 +185,7 @@ a{
     height: auto;
     width: auto;
     background-color:#f9f9f9;
-    padding: 20px;
+    padding: 40px;
     margin: 20px;
     
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
@@ -283,7 +283,7 @@ height: 70px;
 /* Bouton*/
 
 .plus{
-  background-color: blue;
+  
   color: white;
   display: flex;
   align-items: center;
@@ -291,9 +291,14 @@ height: 70px;
   margin-top: 10px;
   
 }
-.plus:hover{
+
+
+.plus span{
+  background-color: blue;
+  padding: 5px
+}
+.plus span:hover{
   background-color: rgb(5, 5, 115);
-  
 }
 
 /* Bouton*/

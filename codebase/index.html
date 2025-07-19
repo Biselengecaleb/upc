@@ -166,7 +166,7 @@
 -->
     </div>
     
-<a class="plus" href="i2AL.html" target="_blank">voir plus</a></button>
+<a class="plus" href="i2AL.html" target="_blank"><span>voir plus</span></a></button>
 
 </section>
     
@@ -262,7 +262,7 @@
         -->
     </div>
 
-<a class="plus" href="i2AV.html" target="_blank">voir plus</a></button>
+<a class="plus" href="i2AV.html" target="_blank"><span>voir plus</span></a></button>
 
 </section>
 
@@ -294,21 +294,7 @@
     <P>&copy;Mon Agence. Tous droits réservés.</P>
 </footer>
 
-<script>
-    
-  const toggle = document.querySelector('.toggle');
-  const toggleIcon = document.querySelector('.toggle i');
-  const toggleMenu = document.querySelector('.toggle_menu');
-
-  toggle.onclick = function () {
-    toggleMenu.classList.toggle('toggle_menu_open');
-    const isOpen = toggleMenu.classList.contains('toggle_menu_open')
-    toggleIcon.classList = isOpen
-    ?'fa-solid fa-xmark'
-    :'fa-solid fa-bars'
-  }
-
-</script>
+<script src="app.js"></script>
 
 
 </body>
