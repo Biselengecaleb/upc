@@ -257,7 +257,7 @@ height: 70px;
 }
 .section3{
   margin: 20px;
-     background-color:#fff;
+     background-color:#f9f9f9;
     border: #555;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ; 
      width: auto;
@@ -269,7 +269,7 @@ height: 70px;
 
 .section2{
     margin: 20px;
-     background-color:#fff;
+     background-color:#f9f9f9;
     border: #555;
     box-shadow:  10px 10px 15px rgba(0.1,0.1, 0.1, 0.1) ;
     width: auto;
@@ -307,7 +307,7 @@ height: 70px;
 .à-louer{
     gap: 10px;
     display: flex;
-    background-color:white;
+    background-color:#f9f9f9;;
     height: auto;
     width: 100%;
     flex-wrap: wrap;
@@ -436,7 +436,7 @@ button:hover {
 }
 /* Formulaire connexion*/
 .form-connexion{
-     background-color: #fff;
+     background-color: #f9f9f9;;
   padding: 40px;
   border-radius: 20px;
   max-width: 100%;
@@ -490,7 +490,7 @@ footer{
 }
 /* Formulaire connexion*/
 .form-container{
-     background-color: #fff;
+     background-color: #f9f9f9;;
   padding: 40px;
   border-radius: 20px;
   width: 60%;
@@ -563,6 +563,226 @@ button {
 button:hover {
   background-color: rgb(134, 153, 24);
 }
+
+
+
+
+
+.gallery-contenair{
+    display: flex;
+    flex-wrap:wrap;
+    height: 300px;
+    overflow: scroll;
+    width:auto;
+    margin: 50px auto;
+    flex-basis: 300px;
+    background-color:#f9f9f9;;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 3px 15px rgba(0.1,0.1, 0.1, 0.3) ;
+
+
+}
+
+.gallery-item{
+    flex-basis: 32.7%;
+    margin-bottom: 6px;
+    opacity: 0.85;
+    cursor: pointer;
+    
+    max-height: 50%;
+    max-width: auto;
+
+}
+.gallery-item:hover{
+    opacity: 1;
+}
+.gallery-item img{
+    
+    width: 100%;
+    height: 100%;
+     object-fit: cover; 
+}
+
+
+
+
+
+/*light box*/
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Contenu de la lightbox */
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content img {
+    min-width: 80%;
+    min-height: 80%;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    object-fit: contain;
+    animation: zoomIn 0.4s ease;
+}
+
+/* Boutons de navigation */
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 28px;
+    padding: 10px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+/* Bouton de fermeture */
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
+}
+
+
+
+   
+.btn3{
+     background-color:  rgb(217, 255, 0);
+    border-radius: 20px;
+    padding:5px;
+    color: rgb(21, 17, 17);
+    font-weight: bolder;
+    
+    transition: scale 0.2 ease;
+    padding: 5px 10px;
+
+}
+.btn3:hover{
+      background-color:  rgb(134, 153, 24);
+    scale: 1.05;
+}
+
+
+
+
+
+
+
+/*le bouton qui ouvre*/
+.modal-btn {
+    padding: 10px ;
+    font-size: 18px;
+    display: block;
+    
+    cursor: pointer;
+    
+}
+/*le contenair et la modal*/
+.modal-container{
+   /* display: none;*/
+   visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+}
+.modal-container.active{
+    /*display: block;*/
+    visibility: visible;
+    
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+}
+.modal{
+    width: 95%;
+    max-width: 90%;
+    min-width: 80%;
+    min-height: 90%;
+    height: auto;
+    margin-top: 3%;
+    padding: 30px;
+    background: #f9f9f9;;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-modal{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background:red;
+    color: #f9f9f9;;
+}
+.modal h1{
+
+}
+
+
+
+
+
+
+
 @media (max-width: 600px) {
   .form-group {
     flex-direction: column;
