@@ -580,8 +580,9 @@ button:hover {
     flex-wrap:wrap;
     height: 300px;
     overflow: scroll;
-    width:auto;
-    margin: 50px auto;
+    width:50%;
+    
+    margin-top: 5%;
     flex-basis: 300px;
     background-color:#f9f9f9;;
     border: 2px rgb(255, 255, 255) solid;
@@ -634,8 +635,8 @@ button:hover {
 /* Contenu de la lightbox */
 .lightbox-content {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 50%;
+    max-height: 80%;
     margin: 60px auto;
     display: flex;
     align-items: center;
@@ -643,8 +644,8 @@ button:hover {
 }
 
 .lightbox-content img {
-    min-width: 80%;
-    min-height: 80%;
+    width: 60%;
+    height: 60%;
     border-radius: 10px;
     border: 5px solid #fff;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
